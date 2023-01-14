@@ -1,7 +1,7 @@
 Para iniciar a aplicação back end, digite em seu terminal:
 
 ```bash
-node ./server.js
+node .\index.js
 ```
 
 O endpoint para buscar todos os notbooks Lenovo é /notbooks (GET)
