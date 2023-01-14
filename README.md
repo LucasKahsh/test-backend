@@ -10,5 +10,3 @@ O endpoint para buscar todos os notbooks Lenovo é /notbooks (GET)
 
 - Email : lucas.silveira.r@outlook.com
 - [Linkedin](https://www.linkedin.com/in/lucas-ribeirodev)
-
-[Voltar para o topo 🔝](#top)
