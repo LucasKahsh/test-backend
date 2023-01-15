@@ -23,10 +23,21 @@ app.get('/notbooks', async (req, res) => {
           notebook.price = element.children[1].children[0].innerHTML
           notebook.description = element.children[1].children[2].innerText
           notebook.review = element.children[2].children[0].innerText
+          notebook.url = element.children[1].children[1].children[0].href
           notebooks.push(notebook)
       }
       return notebooks
     })
+    
+    for(let not of response){
+      await page.goto(not.url);
+      let noteData = await page.evaluate(async () => {
+        let htmlNote = document.querySelectorAll('.caption');
+        return htmlNote[0].children[1].innerText
+      })
+      not.title = noteData
+    }
+
     await browser.close();
     res.send(response).json()
 })
