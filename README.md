@@ -1,6 +1,11 @@
 Para iniciar a aplicação back end, digite em seu terminal:
 
 ```bash
+npm i
+```
+e depois:
+
+```bash
 node .\index.js
 ```
 
